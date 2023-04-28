@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- TYPOGRAPHY -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+
+    <!-- LINK -->
+    <link rel="icon" type="image/png" href="./assets/icon/logo_hera.png" sizes="40X40">
+    
+    <title>Proyecto poke_api</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="header-logo">
+            <img src="./assets/icon/logo_hera.png" alt="logo">
+        </div>
+
+        <label class="navbar-label" for="hamburger">&#9776;</label>
+        <input class="navbar-input" type="checkbox" name="" id="hamburger" />
+    
+        
+        <nav role="navigation" class="navbar">
+    
+            <ul class="nav-list" id="js-name">
+                <li><a href="https://www.instagram.com/mini_hera_/" target="_blank" class="nav-link">Instagram</a></li>
+                <li><a href="https://github.com/Brisnayu" target="_blank" class="nav-link">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/brisna-a-paez-m-283934154" target="_blank" class="nav-link">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <article class="first-main">
+
+            <section class="first-main-article">
+                <h1>Encuentra tu Pokemon ideal</h1>
+            </section>
+
+            <section id="init" class="second-main-article">
+
+                <div class="container-img">
+                    <img class="left-side-img" src="./assets/images/img1.jpg" alt="pokemon_image">
+                    <img class="left-half-img" src="./assets/images/img4.jpg" alt="pokemon_image">
+                    <img class="central-img" src="./assets/images/start_image.jpg" alt="pokemon_image">
+                    <img class="right-half-img" src="./assets/images/img3.jpg" alt="pokemon_image">
+                    <img class="right-side-img" src="./assets/images/img2.jpg" alt="pokemon_image">
+                </div>
+                
+                <div class="container-form">
+                    <form id="request-form">
+                        <label for="text">Formulario</label>
+                        <p>Busca tu Pokemón por su nombre o ID</p>
+                        <input type="text" placeholder="Introduce el nombre del pokemón" name="name" id="search-name"/>
+                        <input type="number" placeholder="Introduce la ID del pokemón" name="number" id="pokemon-search">
+                        <button type="button" id="search-button">Enviar solicitud</button>
+                        <button type="button" id="reset">Limpiar el listado</button>
+                    </form>   
+                </div>
+ 
+            </section>
+
+        </article>
+        
+        <article class="second-main">
+
+            <section class="third-main-article">
+                <h2>Tú listado POKEMÓN</h2>
+            </section>
+
+            <span class="loader"></span>
+
+            <section class="pokemon-container">
+                <!-- AQUÍ VAN LOS POKEMON!!! -->
+            </section>
+
+
+        </article>
+
+    </main>
+
+    <footer>
+
+        <a class="go-up" href="#init">
+            <img src="./assets/icon/flecha-hacia-arriba.png" alt="flecha-hacia-arriba">
+        </a>
+        
+        <article>
+            <p>Creado por Brisna Páez para Rock {TheCode}</p>
+
+            <ul class="list-footer">
+                <li><a href="https://www.instagram.com/mini_hera_/" target="_blank" class="icon-footer">
+                    <img src="./assets/icon/icon-instagram.png" alt="icon-instagram"></a>
+                </li>
+                <li><a href="https://github.com/Brisnayu" target="_blank" class="icon-footer">
+                    <img src="./assets/icon/icon-github.png" alt="icon-github"></a></li>
+                <li><a href="https://www.linkedin.com/in/brisna-a-paez-m-283934154" target="_blank" class="icon-footer">
+                    <img src="./assets/icon/icon-linkedin.png" alt="icon-linkedin"></a>
+                </li>
+            </ul> 
+        </article>
+
+
+    </footer>
+
+    <script src="./filter.js"></script>
+</body>
+</html>
